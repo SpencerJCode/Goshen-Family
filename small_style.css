@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+vertical-align: baseline;
+font-weight: inherit;
+font-family: 'PT Sans', sans-serif;
+font-style: inherit;
+font-size: 100%;
+border: 0 none;
+outline: 0;
+padding: 0;
+margin: 0;
+}
+/* this global reset was found in an article by Jeff Star, and can be found at
+https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/ */
+
+
+img {
+    margin: 6px;
+    border-radius: 15px;
+}
+
+body {
+    margin-top:5px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card_text {
+    font-size: 16px;
+}
+
+p {
+    margin: 4px;
+    text-indent: 1em;
+    line-height: 1.4;
+}
+
+.borderColors {
+    border-top: ridge 9px #2991bd;
+    border-left: ridge 9px #bbbaba;
+    border-bottom: ridge 9px #d30f0f;
+    border-right: ridge 9px #ba8125;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:1px;
+    background-color:rgb(20, 20, 20);
+    height: 270px;
+    width: 100%;
+}
+
+.header > img {
+    width: 120px;
+    margin-bottom: -12px;
+}
+
+.brand {
+    font-size: 36px;
+    color:rgb(172, 121, 20)
+}
+
+.crest {
+  width: 240px;
+}  
+
+.logo {
+    width: 120px;
+}
+
+.section {
+    width: 80%;
+}
+
+.break {
+    width: 50%;
+    border-bottom: solid 2px rgb(171, 16, 16);
+    margin-top: 25px;
+}
+
+.littlebreak {
+    width: 35%;
+    border-bottom: solid 1px rgb(171, 16, 16);
+    margin: 0 auto;
+}
+
+.card_title {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    color: rgb(32, 32, 160)
+}
+
+.card_list_contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
