@@ -38,6 +38,8 @@ p {
     margin: 4px;
     text-indent: 4em;
     line-height: 1.6;
+    text-wrap:pretty;
+    text-align: center;
 }
 
 .borderColors {
@@ -65,7 +67,9 @@ p {
 
 .brand {
     font-size: 84px;
-    color:rgb(172, 121, 20)
+    color:rgb(172, 121, 20);
+    text-wrap:pretty;
+    text-align: center;
 }
 
 .crest {
