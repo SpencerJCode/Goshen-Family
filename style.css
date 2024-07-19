@@ -1,0 +1,338 @@
+* {
+vertical-align: baseline;
+font-weight: inherit;
+font-family: 'PT Sans', sans-serif;
+font-style: inherit;
+font-size: 100%;
+border: 0 none;
+outline: 0;
+padding: 0;
+margin: 0;
+cursor: url('assets/dogpaw1.png'), auto;
+}
+/* this global reset was found in an article by Jeff Star, and can be found at
+https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+img {
+    margin: 8px;
+    box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border-top: ridge 9px #2991bd;
+    border-left: ridge 9px #bbbaba;
+    border-bottom: ridge 9px #d30f0f;
+    border-right: ridge 9px #ba8125;
+}
+
+.upButton {
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    border:solid 3px #C89F9C;
+    box-shadow: none;
+    position:fixed;
+    top:2%;
+    left:63%;
+    z-index: 1;
+}
+
+.fbLogo {
+    width:30px;
+    height:30px;
+    margin-top:25px;
+}
+
+.fbLogo:hover {
+    background-color: #EED7C5;
+    outline:#B36A5E solid 3px;
+}
+
+.upButton:hover {
+    background-color: #EED7C5;
+    box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.largeIMG {
+    height:430px;
+}
+
+.medIMG {
+    height:370px;
+}
+
+body {
+    margin-top:5px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+p {
+    margin: 4px;
+}
+
+.borderColors {
+    border-top: ridge 9px #2991bd;
+    border-left: ridge 9px #bbbaba;
+    border-bottom: ridge 9px #d30f0f;
+    border-right: ridge 9px #ba8125;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom:1px;
+}
+
+.header > img {
+  width: 360px;
+  height:400px;
+}  
+
+.brand {
+    width:500px;
+    height: 36px;
+    border-bottom: solid 2px #B36A5E;
+    margin-bottom: 12px;
+}
+
+.brand > h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.slogan {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #B36A5E;
+}
+
+@media only screen and (max-width: 640px) {
+    .needShrink {
+        flex-direction: column;
+    }
+}
+
+.navItem{
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 640px) {
+.navBar-Container {
+    margin-top:10px;
+    margin-bottom:10px;
+    min-width: 300px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap:2em;
+}
+}
+@media only screen and (max-width: 640px) {
+    .navBar-Container {
+        margin-top:10px;
+        margin-bottom:10px;
+        min-width: 300px;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap:.5em;
+        flex-direction: column;
+    }
+    }
+
+.navItem:hover {
+background-color: #B36A5E;
+color: white;
+border-radius: 10px;
+font-weight: 500;
+padding: 0px 5px;
+}
+
+.sectionContainer {
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+@media only screen and (max-width: 640px) {
+    .sectionContainer {
+        width:90%;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .sectionContainer {
+        max-width: 750px;
+    }
+}
+
+.cardTitle {
+    text-align: center;
+    width:100%;
+    font-size: 26px;
+    background-color: #EED7C5;
+    color: #B36A5E;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cardContents {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: .2em;
+}
+
+.cardText {
+    margin: 10px;
+    text-align: justify;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.dogText {
+    font-size: 38px;
+    text-decoration: underline;
+    color: #B36A5E;
+    font-family: Accordance;
+    margin: 5px;
+}
+
+.dogPhotoContainer{
+    display: flex;
+    flex-direction: column;
+
+}
+.dogPhotoContainer > * > * > img {
+    border-radius: 15px;
+    gap:.5em; 
+    margin: 3px;
+}
+
+.sonaSlides, .koeySlides, .havenSlides, .currentLitterSlides, .pastLitterSlides {display: none;}
+img {vertical-align: middle;}
+
+.pastLitterSlides {
+    min-width:215px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: block;
+}
+
+/* The dots/bullets/indicators */
+.dotSona {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dotKoey {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .dotHaven {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .dotCalgary {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .dotCurrent {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+#FAQ {
+    border-radius: 15px;
+    border: solid 2px #B36A5E;
+}
+
+.question {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #B36A5E;
+    text-align: left;
+}
+
+
+input, textarea {
+    border: solid 2px #B36A5E;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    width:300px;
+}
+
+.review {
+    color: #C97C5D;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    margin-top:20px;
+}
+
+@media only screen and (max-width: 640px) {
+    .review {
+        font-size: 12px;
+    }
+}
+
+.smallIMG {
+    height:310px;
+}
