@@ -162,3 +162,8 @@ li {
 .email:hover {
     cursor:pointer;
 }
+
+.NeutralLink {
+    color:white;
+    text-decoration: none;
+}
