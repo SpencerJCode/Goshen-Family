@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' media='screen and (min-width: 681px)' href='style.css' />
+    <link rel='stylesheet' media='screen and (max-width: 680px)' href='small_style.css' />
+    <title>Goshen Family Trades</title>
+    <meta name="keywords"
+        content="Johnson, Family, Christian, Spencer, Bethany">
+    <meta name="description"
+        content="The Johnson family in southern Virginia.">
+    <meta name="author" content="Spencer Johnson">
+    <meta property="og:image" content="\assets\Crest.jpg" />
+    <link rel="icon" type="image/x-icon" href="assets\favicon.ico">
+    <script src="..\goshenWebEngine.js"></script>
+</head>
+
+<body onload="goshenWebEngine.recordingEngine.initialLoad()">
+    <label for="things_of_life">Things of Life:</label>
+    <select name="things_of_life" id="things_of_life">
+        <option value="Numbers 1_20.mp3">Numbers 1-20</option>
+        <option value="Alphabet.mp3">Alphabet</option>
+        <option value="Days of the Week.mp3">Days of the Week</option>
+        <option value="Months of the Year.mp3">Months of the Year</option>
+        <option value="Apostles Creed.mp3">Apostles Creed</option>
+        <option value="50 US States.mp3">50 US States</option>
+    </select>
+    </br>
+    <label for="scripture">Scripture:</label>
+    <select name="scripture" id="scripture">
+        <option value="John 3_16.mp3">John 3:16</option>
+        <option value="Disciples Prayer.mp3">Disciple’s Prayer</option>
+        <option value="Books of the Old Testament Law.mp3">Books of the Old Testament Law</option>
+        <option value="Books of the Old Testament Prophets.mp3">Books of the Old Testament Prophets</option>
+        <option value="Books of the Old Testament Writings.mp3">Books of the Old Testament Writings</option>
+        <option value="Books of the New Testament.mp3">Books of the New Testament</option>
+        <option value="Beatitudes.mp3">Beatitudes</option>
+        <option value="Psalm 1.mp3">Psalm 1</option>
+        <option value="Pslam 23.mp3">Psalm 23</option>
+        <option value="Psalm 100.mp3">Psalm 100</option>
+        <option value="Proverbs 1_7.mp3">Proverbs 1:7</option>
+        <option value="Proverbs 3_5-7.mp3">Proverbs 3:5-7</option>
+        <option value="2 Corinthians 5_21.mp3">2 Corinthians 5:21</option>
+        <option value="Romans 10_9-10.mp3">Romans 10:9-10</option>
+        <option value="Colossians 1_15-20.mp3">Colossians 1:15-20</option>
+    </select>
+    </br>
+
+    <button id="recording_player" class="play_button" onclick="goshenWebEngine.recordingEngine.playRecording()">Play ></button>
+
+</body>
+
+</html>
